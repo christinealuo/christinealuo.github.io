@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Solway&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/script.js"></script>
+  </head>
+  <body onload="loadPage()">
+    <div id="container">
+      <header>
+        <h1>Christine Ai Luo</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="loader-container">
+        <div class="loader">
+          <img src="./assets/images/minnie-mouse-tsum.png" class="first tsum" />
+          <img
+            src="./assets/images/minnie-mouse-tsum.png"
+            class="second tsum"
+          />
+          <img src="./assets/images/minnie-mouse-tsum.png" class="third tsum" />
+        </div>
+      </div>
+      <div id="body-div">
+        <div id="about">
+          <h2>About</h2>
+          <div id="bio">
+            <p>
+              Welcome to my website! My name is Christine and I'm currently a
+              junior studying computer science at UC Berkeley. My favorite class
+              this semester is the Web Design DeCal! I'm currently taking CS 162
+              and CS 186. I'm also taking Korean 1A and it's pretty fun learning
+              a new language. Outside of school, I enjoy teaching as a junior
+              mentor for Computer Science Mentors, a club that provides small
+              group tutoring sections for lower-division computer science
+              classes here at Berkeley. There I help teach CS 61A and CS 88. I
+              also enjoy watching Terrace House, playing Disney Tsum Tsum, and
+              napping, Thanks for visiting my website!
+            </p>
+          </div>
+          <div class="image-container-carousel">
+            <div class="caoursel-controls">
+              <!-- <button id="prev-button">Previous</button>
+              <button id="next-button">Next</button> -->
+            </div>
+            <div id="carousel-image-row">
+              <div class="carousel-image">
+                <img src="./assets/images/christine.jpg" />
+              </div>
+              <!-- <div class="carousel-image">
+                <img id="profile" src="./assets/images/christine2.jpg" />
+              </div> -->
+              <!-- <div class="carousel-image">
+                <img src="./assets/images/christine3.jpg" />
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div id="experience">
+          <h2>Experience</h2>
+          <h4>CS 61A Tutor/Associate Mentor</h4>
+        </div>
+        <div id="teaching">
+          <h2>Teaching</h2>
+          <div id="bio">
+            <p>
+              Here are some notes I created for my CS 61A and CS 88 tutoring
+              sections. Feel free to check them out and let me know if you have
+              any questions or concerns by emailing me at
+              christineluo@berkeley.edu! Click on a class to get started ʕ·ᴥ·ʔ
+            </p>
+          </div>
+          <div class="button-container">
+            <a href="#teaching" onclick="show61ANotes();"
+              ><div class="button course" id="cs61a">CS 61A</div></a
+            >
+            <a href="#teaching" onclick="show88Notes();"
+              ><div class="button course" id="cs88">CS 88</div></a
+            >
+          </div>
+          <div class="button-container">
+            <a
+              href="https://docs.google.com/document/d/1nj3KRkmknIPF1XCuSvEAo2xG6StUBfu5s7-bZsxxj5c/edit?usp=sharing"
+              target="_blank"
+              ><div class="button notes" id="scheme">Scheme</div></a
+            >
+            <a
+              href="https://docs.google.com/document/d/13Ptzf4so0KCLv-coBru3VIPgI-O6zTHkmQrqczZ9gWY/edit?usp=sharing"
+              target="_blank"
+              ><div class="button notes" id="macros">Macros</div></a
+            >
+            <a
+              href="https://docs.google.com/document/d/13Arc1c4G2idIUG5Av-33C6c3UHimmqQ0L9b-A2A6nOs/edit?usp=sharing"
+              target="_blank"
+              ><div class="button notes" id="mutability">Mutability</div></a
+            >
+            <a
+              href="https://docs.google.com/document/d/1yk-PIgRajRsEEvUYjWGcUGsjwefNEfqDN4odvXTMpnw/edit?usp=sharing"
+              target="_blank"
+              ><div class="button notes" id="linkedLists">Linked Lists</div></a
+            >
+            <a
+              href="https://docs.google.com/document/d/1LBNBV7tFiuMrtoYoO0QMy5Ud6nFgo8UxEjKfV6xqFRc/edit?usp=sharing"
+              target="_blank"
+              ><div class="button notes" id="oop">
+                Object-Oriented Programming
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

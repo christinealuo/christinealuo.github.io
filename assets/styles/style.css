@@ -1,0 +1,201 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+li a {
+  display: block; /* Whole link area clickable, not just the text */
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: hotpink;
+}
+
+li {
+  display: inline-block; /* Display links on one line; removes line breaks */
+  padding: 10px;
+}
+
+#body-div {
+  margin: auto;
+  display: none; /* Default = inline */
+}
+
+#container {
+  background: pink;
+  width: 1200px;
+  padding: 50px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+nav {
+  margin-bottom: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Solway", serif;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+/* Loader animation */
+#loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Why doesn't image resizing work when width is set to 100%? */
+}
+
+.loader .tsum {
+  max-width: 40%;
+  /* background: hotpink; */
+  animation: wave 2s infinite;
+  padding-right: 4px;
+}
+
+.loader .tsum.second {
+  animation-delay: 0.25s;
+}
+
+.loader .tsum.third {
+  animation-delay: 0.5s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Teaching */
+#teaching {
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-container .button {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.button-container .button.course {
+  background-color: hotpink;
+}
+
+.button-container .button.notes {
+  background-color: palevioletred;
+}
+
+.button-container a {
+  text-decoration: none;
+}
+
+.button-container a:hover {
+  color: white;
+}
+
+#scheme,
+#macros,
+#mutability,
+#linkedLists,
+#oop {
+  display: none;
+}
+
+/* About */
+.image-container-carousel {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  text-align: center;
+  /* border: solid; */
+  /* border-color: hotpink; */
+  width: 480px;
+  height: 360px;
+  margin: auto;
+}
+
+#carousel-image-row {
+  /* Make images appear in a row */
+  display: flex;
+  flex-direction: row;
+  /* Positioning */
+  position: relative;
+  left: 0px;
+}
+
+.carousel-image {
+  width: 480px;
+  height: 360px;
+}
+
+.carousel-image img {
+  /* Make image fill up the container */
+  height: 100%;
+  width: auto;
+}
+
+#bio {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Experience */
+#heading,
+.experience-body {
+  text-align: center;
+}
+
+.experience-body {
+  width: 50%;
+  margin: auto;
+}
+
+#update {
+  text-align: center;
+}
+
+#cs61a,
+#cs88 {
+  color: black;
+}
